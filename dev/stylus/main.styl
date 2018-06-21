@@ -1,0 +1,226 @@
+$buttercup = #f5a623
+$white = #ffffff
+$cornflower_blue = #796FF0
+$jacarta = #352d5f
+
+body
+	font-family 'Nunito'
+	color $jacarta
+
+.container--space
+	margin-top 50px
+	margin-bottom 50px
+
+.btn--jacarta
+	border solid 1px $jacarta
+	border-radius 0
+	color $jacarta
+	&:hover
+		background $jacarta
+		color $white 
+	
+.txt--xbig
+	font-size 35px
+	
+.txt--big
+	font-size 25px
+	
+.txt--medium
+	font-size 18px
+
+.txt--small
+	font-size 14px
+
+.bredcrumb--links + a
+	font-weight bold
+	color $jacarta
+	text-decoration none
+		
+#general-about, #benefits-about, #benefits-list, #payment-options
+	margin-top 8%
+		
+.navbar--purple
+	background $cornflower_blue
+
+.nav--white, .navbar-brand--white, .lang-item > a
+	color $white !important
+
+.menu-lang-container
+	position absolute
+	top 10px
+	right 10px
+
+#menu-menu_en, #menu-menu_es
+	padding 0
+	margin-top 1rem
+
+.navbar-toggler--custom
+	border none !important
+	
+.fa-bars
+	font-size 12px !important
+	color white !important
+		
+.lang-item
+	display inline-block
+	border solid 1px $white
+	padding 5px
+	
+.lang-item:hover
+	background $buttercup
+	transition ease 1s
+	cursor pointer
+	a
+		text-decoration none
+
+.img-logo
+	width 25%
+
+.menu-item
+	display inline-block
+	a 
+		color $white
+		padding 10px
+		
+.nav-link--underline
+	position relative !important
+	text-decoration none !important
+	transition color .4s ease-out !important
+	&:hover 
+		color $white !important
+		right 0 !important
+		text-decoration none !important
+	&:hover:after 
+		border-color $buttercup !important
+		right 0 !important
+	&:after
+		border-radius 1em !important
+		border-top .1em solid #2F56B0 !important
+		content "" !important
+		position absolute !important
+		right 100% !important
+		bottom .14em !important
+		left 0 !important
+		transition right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out !important
+	&:hover:after 
+		animation underline 2s cubic-bezier(0,.5,0,1) infinite !important
+		border-color $buttercup !important
+
+.benefits--title
+	color $white
+	font-weight bold 
+	text-transform uppercase
+	display block
+	padding 10px
+	
+.main--title
+	@extends .benefits--title
+	color $jacarta
+	
+.benefits
+	background $cornflower_blue
+	color $white
+
+.start-now
+	background $buttercup
+	color $white
+	margin 30px
+	padding 20px
+	cursor pointer
+	&:hover
+		background $cornflower_blue
+		transition ease 1s
+	
+.item
+	color $jacarta
+	font-weight bold
+	text-align center
+	display block
+
+i.fas
+	display block
+	text-align center
+	font-size 50px
+	margin-bottom 5%
+	color $buttercup
+
+footer
+	background $jacarta
+	color $white
+	padding 50px 0
+	
+.footer
+	&--title
+		font-weight bold
+		display block	
+	&--content
+		display block
+	&--list
+		padding 0
+		&-item
+			list-style-type none
+			a 
+				color $white
+	&--logo
+		margin-bottom 20px
+
+
+.social
+	margin 10px 0 
+	padding 0
+	&--item 
+		display inline-block
+		a
+			width 30px
+			height 30px
+			display block
+			border solid 1px $white
+			color $white
+			line-height 2
+			text-align center
+		&:hover
+			background $buttercup
+			transition ease 1s
+			
+
+@keyframes underline{
+	0%, 10%{
+		left: 0;
+		right: 100%;
+	}
+	40%, 60%{
+		left: 0;
+		right: 0;
+	}
+	90%, 100%{ 
+		left: 100%;
+		right: 0;
+	}
+}
+
+/*-- BLOG --*/
+.card-img
+	display block
+	width 100%
+	height auto
+
+.card-text
+	font-weight normal
+
+@media (min-width:0px) and (max-width: 796px)
+	.txt--xbig
+		font-size 25px
+		
+	.txt--big
+		font-size 20px
+		
+	.txt--medium
+		font-size 14px
+
+	.txt--small
+		font-size 12px
+		
+	.menu-lang-container
+		bottom 0 
+		top inherit
+		

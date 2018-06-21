@@ -1,0 +1,240 @@
+body {
+  font-family: 'Nunito';
+  color: #352d5f;
+}
+.container--space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn--jacarta {
+  border: solid 1px #352d5f;
+  border-radius: 0;
+  color: #352d5f;
+}
+.btn--jacarta:hover {
+  background: #352d5f;
+  color: #fff;
+}
+.txt--xbig {
+  font-size: 35px;
+}
+.txt--big {
+  font-size: 25px;
+}
+.txt--medium {
+  font-size: 18px;
+}
+.txt--small {
+  font-size: 14px;
+}
+.bredcrumb--links + a {
+  font-weight: bold;
+  color: #352d5f;
+  text-decoration: none;
+}
+#general-about,
+#benefits-about,
+#benefits-list,
+#payment-options {
+  margin-top: 8%;
+}
+.navbar--purple {
+  background: #796ff0;
+}
+.nav--white,
+.navbar-brand--white,
+.lang-item > a {
+  color: #fff !important;
+}
+.menu-lang-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#menu-menu_en,
+#menu-menu_es {
+  padding: 0;
+  margin-top: 1rem;
+}
+.navbar-toggler--custom {
+  border: none !important;
+}
+.fa-bars {
+  font-size: 12px !important;
+  color: #fff !important;
+}
+.lang-item {
+  display: inline-block;
+  border: solid 1px #fff;
+  padding: 5px;
+}
+.lang-item:hover {
+  background: #f5a623;
+  transition: ease 1s;
+  cursor: pointer;
+}
+.lang-item:hover a {
+  text-decoration: none;
+}
+.img-logo {
+  width: 25%;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-item a {
+  color: #fff;
+  padding: 10px;
+}
+.nav-link--underline {
+  position: relative !important;
+  text-decoration: none !important;
+  transition: color 0.4s ease-out !important;
+}
+.nav-link--underline:hover {
+  color: #fff !important;
+  right: 0 !important;
+  text-decoration: none !important;
+}
+.nav-link--underline:hover:after {
+  border-color: #f5a623 !important;
+  right: 0 !important;
+}
+.nav-link--underline:after {
+  border-radius: 1em !important;
+  border-top: 0.1em solid #2f56b0 !important;
+  content: "" !important;
+  position: absolute !important;
+  right: 100% !important;
+  bottom: 0.14em !important;
+  left: 0 !important;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out !important;
+}
+.nav-link--underline:hover:after {
+  animation: underline 2s cubic-bezier(0, 0.5, 0, 1) infinite !important;
+  border-color: #f5a623 !important;
+}
+.benefits--title,
+.main--title {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+}
+.main--title {
+  color: #352d5f;
+}
+.benefits {
+  background: #796ff0;
+  color: #fff;
+}
+.start-now {
+  background: #f5a623;
+  color: #fff;
+  margin: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+.start-now:hover {
+  background: #796ff0;
+  transition: ease 1s;
+}
+.item {
+  color: #352d5f;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+i.fas {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 5%;
+  color: #f5a623;
+}
+footer {
+  background: #352d5f;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer--title {
+  font-weight: bold;
+  display: block;
+}
+.footer--content {
+  display: block;
+}
+.footer--list {
+  padding: 0;
+}
+.footer--list-item {
+  list-style-type: none;
+}
+.footer--list-item a {
+  color: #fff;
+}
+.footer--logo {
+  margin-bottom: 20px;
+}
+.social {
+  margin: 10px 0;
+  padding: 0;
+}
+.social--item {
+  display: inline-block;
+}
+.social--item a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: solid 1px #fff;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+}
+.social--item:hover {
+  background: #f5a623;
+  transition: ease 1s;
+}
+/*-- BLOG --*/
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-text {
+  font-weight: normal;
+}
+@media (min-width: 0px) and (max-width: 796px) {
+  .txt--xbig {
+    font-size: 25px;
+  }
+  .txt--big {
+    font-size: 20px;
+  }
+  .txt--medium {
+    font-size: 14px;
+  }
+  .txt--small {
+    font-size: 12px;
+  }
+  .menu-lang-container {
+    bottom: 0;
+    top: inherit;
+  }
+}
+@keyframes underline {
+  0%, 10% {
+    left: 0;
+    right: 100%;
+  }
+  40%, 60% {
+    left: 0;
+    right: 0;
+  }
+  90%, 100% {
+    left: 100%;
+    right: 0;
+  }
+}

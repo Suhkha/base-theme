@@ -9,6 +9,10 @@ connect = require('gulp-connect');
 gulp.task('lib-css', function () {
     gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
         .pipe(gulp.dest('assets/lib/bootstrap/css/'));
+    gulp.src('node_modules/owl.carousel/dist/assets/owl.carousel.min.css')
+        .pipe(gulp.dest('assets/lib/owl.carousel/css/'));
+    gulp.src('node_modules/owl.carousel/dist/assets/owl.theme.default.min.css')
+        .pipe(gulp.dest('assets/lib/owl.carousel/css/'));
 });
 
 gulp.task('lib-js', function () {
@@ -16,6 +20,8 @@ gulp.task('lib-js', function () {
         .pipe(gulp.dest('assets/lib/jquery/'));
     gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
         .pipe(gulp.dest('assets/lib/bootstrap/js/'));
+    gulp.src('node_modules/owl.carousel/dist/owl.carousel.min.js')
+        .pipe(gulp.dest('assets/lib/owl.carousel/js/'));
     gulp.src('node_modules/popper.js/js/popper.min.js')
         .pipe(gulp.dest('assets/lib/popper/js/'));
 });
